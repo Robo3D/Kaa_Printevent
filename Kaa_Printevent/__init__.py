@@ -10,7 +10,6 @@ from __future__ import absolute_import
 
 import octoprint.plugin
 import thread
-from mixpanel import Mixpanel
 from datetime import datetime
 from . import kaa
 
@@ -26,7 +25,7 @@ def valid_event(event):
 		'PrintFailed',
 		'PrintDone',
 		'PrintCancelled',
-		'PrintPausedd',
+		'PrintPaused',
 		'PrintResumed'
 	]
 
