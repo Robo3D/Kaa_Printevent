@@ -60,12 +60,12 @@ class Kaa_printeventPlugin(octoprint.plugin.StartupPlugin, octoprint.plugin.Even
 
 				# version check: github repository
 				type="github_release",
-				user="jense-arntz",
+				user="robo3d",
 				repo="Kaa_Printevent",
 				current=self._plugin_version,
 
 				# update method: pip
-				pip="https://github.com/jense-arntz/Kaa_Printevent/archive/{target_version}.zip"
+				pip="https://github.com/robo3d/Kaa_Printevent/archive/{target_version}.zip"
 			)
 		)
 
