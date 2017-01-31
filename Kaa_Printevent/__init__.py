@@ -41,10 +41,8 @@ class Kaa_printeventPlugin(octoprint.plugin.StartupPlugin, octoprint.plugin.Even
 
 	def on_event(self, event, payload):
 
-		self._logger.info('kaa: {}'.format(event))
-
 		if not valid_event(event):
-			self._logger.info('not kaa in range.')
+			pass 
 
 		else:
 			thread.start_new_thread(kaa.send, (event,))
